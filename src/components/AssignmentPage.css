@@ -1,0 +1,256 @@
+.assignment-page * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.assignment-page {
+  background: #ffffff;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-button {
+  background-color: #87CEEB;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #79b7d1;
+}
+
+.assignment-header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.back-arrow {
+  text-decoration: none;
+  color: #87CEEB;
+  font-size: 28px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.back-arrow:hover {
+  transform: translateX(-2px);
+}
+
+.title-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.course-name {
+  color: #87CEEB;
+  font-size: 16px;
+}
+
+.assignment-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.assignment-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-card, .description-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  color: #333;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #87CEEB;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  min-width: 48px;
+  text-align: right;
+  color: #87CEEB;
+  font-weight: 500;
+}
+
+.description-card h2 {
+  color: #333;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.description-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.grade-display {
+  background: white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.grade-value {
+  font-size: 32px;
+  font-weight: 600;
+  color: #87CEEB;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.selected-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f8f9fa;
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.file-name {
+  flex: 1;
+  color: #333;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+}
+
+.remove-file {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color 0.2s ease;
+}
+
+.remove-file:hover {
+  color: #ff4444;
+}
+
+.submit-button {
+  background-color: #87CEEB;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #79b7d1;
+  transform: translateY(-2px);
+}
+
+.submitted-tag {
+  background-color: #87CEEB;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.submit-button.resubmit {
+  background-color: #666;
+}
+
+.submit-button.resubmit:hover {
+  background-color: #555;
+} 
